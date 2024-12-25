@@ -1,0 +1,102 @@
+/* Основные стили для страницы */
+body {
+    font-family: 'Arial', sans-serif; /* Основной шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D; /* Темный фон сайта */
+    color: #ffffff; /* Светлый текст */
+}
+
+/* Шапка сайта */
+header {
+    background-color: #1A1A1A; /* Темный серый */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #FF0000; /* Красная линия */
+}
+
+header h1 {
+    margin: 0;
+    color: #FF0000; /* Красный цвет заголовка */
+    font-size: 2.5em; /* Увеличенный размер шрифта */
+    font-family: 'Impact', sans-serif; /* Грубый и массивный шрифт */
+    text-shadow: 2px 2px 5px #000; /* Тень для текста */
+}
+
+/* Навигационное меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #262626; /* Темный фон для меню */
+    border-top: 2px solid #FF0000; /* Красная линия сверху */
+    border-bottom: 2px solid #FF0000; /* Красная линия снизу */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* Белый текст */
+    font-weight: bold;
+    font-size: 1.1em; /* Немного увеличенный размер шрифта */
+    padding: 10px 15px;
+    transition: all 0.3s;
+    font-family: 'Verdana', sans-serif; /* Шрифт для текста меню */
+}
+
+nav ul li a:hover {
+    background-color: #FF0000; /* Красный фон при наведении */
+    color: #0D0D0D; /* Темный цвет текста при наведении */
+    border-radius: 5px; /* Скругленные края */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #FF0000; /* Красный цвет заголовков */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Классический шрифт */
+}
+
+main p {
+    font-size: 1.2em; /* Увеличенный текст */
+    line-height: 1.6; /* Пространство между строками */
+    color: #D3D3D3; /* Светло-серый текст */
+}
+
+/* Нижний колонтитул */
+footer {
+    background-color: #1A1A1A; /* Темный серый */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 3px solid #FF0000; /* Красная линия */
+}
+
+footer p {
+    margin: 0;
+    color: #E0E0E0; /* Светлый текст */
+    font-size: 0.9em; /* Немного уменьшенный размер текста */
+    font-family: 'Tahoma', sans-serif; /* Читаемый шрифт */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Вертикальное меню на узких экранах */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
